@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Test Page for Inventory Module
+		</title>
+		
+		<script src="../../lib/jquery/jquery.js" type="text/javascript"></script>
+		<script src="../../lib/jquery/jquery.cookie.js" type="text/javascript"></script>
+		<script src="../../lib/treeview/jquery.treeview.js" type="text/javascript"></script>
+		<script src="../../src/storyq.js" type="text/javascript"></script>
+		<script src="../../src/storyq.treeview.js" type="text/javascript"></script>
+		<script src="../../src/storyq.xml.js" type="text/javascript"></script>
+		<script src="../../src/storyqitem.js" type="text/javascript"></script>
+		<script src="../../src/storyqresults.js" type="text/javascript"></script>	
+
+		<script language="javascript" src="../../lib/jsunit/app/jsUnitCore.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="tree"/>
+		<script type="text/javascript">
+
+            var data = '';
+
+		        function setUpPage() {
+		            setUpPageStatus = 'running';
+								jQuery(function() {
+								  $("#tree").storyq({
+								      url: '../../xml/results-01.xml', 
+								      success: null, 
+								      load: function(feed) {
+								        data = feed;
+								     		setUpPageComplete()
+								        }
+								      });
+								});
+		        }
+
+		        function setUpPageComplete() {
+		            if (setUpPageStatus == 'running')
+		                setUpPageStatus = 'complete';
+		        }
+
+		        function testXML2Object() {
+		            assertEquals(setUpPageStatus, 'complete');
+
+								assertEquals(data.version, '0.1')
+								assertEquals("Number of stories", $(feed).size(), 1)
+		        }
+
+		</script>
+		
+	</body>
+</html>

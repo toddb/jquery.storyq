@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE storyq PUBLIC "-//StoryQ//ENTITIES V1.0//EN" "results.dtd">
+<storyq xmlns="http://storyq.8wireunlimited.com/schema/results/0.1">
+	<story namespace="StoryQ.Tests" category="*">
+		<title>This is a user story with multiple scenarios</title>
+		<scenario dialect="AsA">
+		    <role>{role1}</role>
+		    <action>{action}</action>
+		    <value>{business value}</value>
+		    <narrative>
+		      <given result="pending">{I have some condition}1</given>
+	          <when result="passed">{I do something}1</when>
+			      <then result="failed">{I see this result}1</then>
+			      <and>{and I see this result}1</and>
+		    </narrative>
+		    <narrative>
+		      <given result="pending">{I have some condition}2</given>
+	          <and result="pending">{I have another given condition}2</and>
+	          <when result="pending">{I do something}2</when>
+	          <and result="pending">{I have another when condition}2</and>
+		      <then result="pending">{I see this result}2</then>
+		      <and>{I have another then condition}2</and>
+		      <and>{I have (another) second then condition}2</and>
+		    </narrative>
+		</scenario>
+		<scenario dialect="InOrder">
+	      <value>{business value}</value>
+		    <role>{role2}</role>
+		    <action>{action}</action>
+		    <narrative>
+		      <given result="passed">{I have some condition}3</given>
+	          <and result="passed">{I have another given condition}3</and>
+	          <when result="passed">{I do something}3</when>
+		      <then result="passed">{I see this result}3</then>
+		    </narrative>
+		    <narrative>
+		      <given result="failed">{I have some condition}4</given>
+	          <and result="failed">{I have another given condition}4</and>
+	          <when result="failed">{I do something}4</when>
+		      <then result="failed">{I see this result}4</then>
+		    </narrative>
+		</scenario>
+	</story>	
+</storyq>

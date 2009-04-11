@@ -1,0 +1,8 @@
+0.2
+---
+
+* lazy-loading
+* version checking for jquery
+* versioning of xml files
+* change location of the css
+* remove JUnit from any testing and lib

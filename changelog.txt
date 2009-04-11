@@ -1,0 +1,5 @@
+0.1
+
+* create a basic xml structure with dtd
+* use treeview as a display layer to the xml via a jQuery proxy
+* try tests with JSUnit, JsSpec, QUnit

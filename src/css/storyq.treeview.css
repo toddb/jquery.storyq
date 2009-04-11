@@ -1,0 +1,51 @@
+.failed {
+color: red;
+}
+.passed {
+color: green;
+}
+.pending {
+color: green;
+}
+.count {
+color: gray;
+font-style: italic;
+}
+.storyq li {
+padding: 3px 0 2px 16px;
+}
+.storyq span.result {
+padding: 1px 0 1px 16px;
+display: block;
+}
+.storyq span.result-long {
+padding: 1px 0 1px 34px;
+display: block;
+}
+.storyq span.passedproject {
+background: url(../images/passedproject.png) 0 0 no-repeat;
+}
+.storyq span.pendingproject {
+background: url(../images/pendingproject.png) 0 0 no-repeat;
+}
+.storyq span.failedproject {
+background: url(../images/failedproject.png) 0 0 no-repeat;
+}
+.storyq span.passedscenario {
+background: url(../images/passedscenario.png) 0 0 no-repeat;
+}
+.storyq span.pendingscenario {
+background: url(../images/pendingscenario.png) 0 0 no-repeat;
+}
+.storyq span.failedscenario {
+background: url(../images/failedscenario.png) 0 0 no-repeat;
+}
+.storyq span.failed {
+background: url(../images/failed.png) 0 0 no-repeat;
+}
+.storyq span.pending {
+background: url(../images/pending.png) 0 0 no-repeat;
+}
+.storyq span.passed {
+background: url(../images/passed.png) 0 0 no-repeat;
+}

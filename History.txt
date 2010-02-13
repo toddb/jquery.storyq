@@ -1,0 +1,11 @@
+=== 0.3.0 / 2010-02-07
+
+* Major rewrite
+* Change the layout for the new XML (v2.0) storyq results feed
+* changed structure based on changes from jquery plugin generator (see: http://github.com/toddb/jQuery-Plugin-Generator) - now a dependency for building tasks
+
+=== 0.1 / 2008
+
+* create a basic xml structure with dtd
+* use treeview as a display layer to the xml via a jQuery proxy
+* try tests with JSUnit, JsSpec, QUnit

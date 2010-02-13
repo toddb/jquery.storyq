@@ -1,1 +1,0 @@
-This test is redundant as it just wouldn't work but is still here as an example of the difference with JsSpec and QUnit. I also removed the lib because it was 7MB

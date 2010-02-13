@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="StoryQ-SimpleHtml.xslt" type="text/xsl"?>
+<StoryQRun>
+  <Project Name="StoryQ.Demo">
+    <Namespace Name="StoryQ.Demo">
+      <Class Name="DemoTest">
+        <Method Name="PassingExample">
+          <Story Name="Data Safety">
+            <Result IndentLevel="0" Prefix="Story is" Text="Data Safety" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="Keep my data safe" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="User" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="All credit card numbers to be encrypted" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="submitting shopping cart" Type="NotExecutable" />
+            <Result IndentLevel="4" Prefix="Given" Text="I have typed my credit card number into the checkout page" Type="Passed" />
+            <Result IndentLevel="4" Prefix="When" Text="I click the Buy button" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the browser posts my credit card number over the internet" Type="Passed" />
+            <Result IndentLevel="4" Prefix="Then" Text="the form should be posted over https" Type="Passed" />
+          </Story>
+        </Method>
+        <Method Name="PendingExample">
+          <Story Name="Data Safety">
+            <Result IndentLevel="0" Prefix="Story is" Text="Data Safety" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="Keep my data safe" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="User" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="All credit card numbers to be encrypted" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="submitting shopping cart" Type="NotExecutable" />
+            <Result IndentLevel="4" Prefix="Given" Text="I have typed my credit card number into the checkout page" Type="Pending" />
+            <Result IndentLevel="4" Prefix="When" Text="I click the Buy button" Type="Passed" />
+            <Result IndentLevel="5" Prefix="And" Text="the browser posts my credit card number over the internet" Type="Pending" />
+            <Result IndentLevel="4" Prefix="Then" Text="the form should be posted over https" Type="Pending" />
+          </Story>
+        </Method>
+        <Method Name="FailingExample">
+          <Story Name="Data Safety">
+            <Result IndentLevel="0" Prefix="Story is" Text="Data Safety" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="In order to" Text="Keep my data safe" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="As a" Text="User" Type="NotExecutable" />
+            <Result IndentLevel="1" Prefix="I want" Text="All credit card numbers to be encrypted" Type="NotExecutable" />
+            <Result IndentLevel="3" Prefix="With scenario" Text="submitting shopping cart" Type="NotExecutable" />
+            <Result IndentLevel="4" Prefix="Given" Text="I have typed my credit card number into the checkout page" Type="Pending" />
+            <Result IndentLevel="4" Prefix="When" Text="I click the non existent button" Type="Failed">
+              <Exception ID="1" Message="No button with that name found!">
+                <![CDATA[System.Exception: No button with that name found!
+   at StoryQ.Demo.DemoTest.IClickThe_Button(String buttonName) in C:\src\storyq-mer-trunk\src\StoryQ.Demo\DemoTest.cs:line 90
+   at StoryQ.Condition.<>c__DisplayClass17`1.<When>b__16() in C:\src\storyq-mer-trunk\src\StoryQ\Flit.g.cs:line 517
+   at StoryQ.Narrative.Execute() in C:\src\storyq-mer-trunk\src\StoryQ\Narrative.cs:line 68]]>
+              </Exception>
+            </Result>
+            <Result IndentLevel="5" Prefix="And" Text="the browser posts my credit card number over the internet" Type="Pending" />
+            <Result IndentLevel="4" Prefix="Then" Text="the form should be posted over https" Type="Failed">
+              <Exception ID="2" Message="Oh no again!">
+                <![CDATA[System.Exception: Oh no again!
+   at StoryQ.Demo.DemoTest.<FailingExample>b__0() in C:\src\storyq-mer-trunk\src\StoryQ.Demo\DemoTest.cs:line 82
+   at StoryQ.Narrative.Execute() in C:\src\storyq-mer-trunk\src\StoryQ\Narrative.cs:line 68]]>
+              </Exception>
+            </Result>
+          </Story>
+        </Method>
+      </Class>
+    </Namespace>
+  </Project>
+</StoryQRun>

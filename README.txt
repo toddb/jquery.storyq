@@ -10,7 +10,7 @@ This is a jQuery plugin/widget for viewing StoryQ test runs. StoryQ is a BDD-sty
 
 The widget is a basic test runner viewer. It lists tests in a tree view, aggregating fail, success and pending. Each item is able to be clicked on which displays the user stories in a pane below. 
 
-!http://github.com/toddb/jquery.storyq/raw/master/screenshot.png(Screenshot)!
+Screenshot[http://github.com/toddb/jquery.storyq/raw/master/screenshot.png]
 
 == USAGE:
 
@@ -28,16 +28,16 @@ The widget is a basic test runner viewer. It lists tests in a tree view, aggrega
 </head>
 <body>
 
-	<div id="results"/>
+    <div id="results"/>
 
-	<script type="text/javascript">
+    <script type="text/javascript">
 
-		$(function () {
-		    $('#results').storyq({
-		        url: 'tests/data/results-01.xml'
-		    });
-		});
-	</script>
+        $(function () {
+            $('#results').storyq({
+                url: 'tests/data/results-01.xml'
+            });
+        });
+    </script>
 
 </body>
 </html>
@@ -52,10 +52,10 @@ The widget is a basic test runner viewer. It lists tests in a tree view, aggrega
     * data: the jQuery DOM selector id.
     * load: a pre-processing callback function that can be overridden for populating the treeview.
     * success: a function to be called if the request succeeds - this will override default function rather than being chained
-	* summary: (default:summary) - target DOM selector id for the summary of user stories to go to
-	* tree: (default: tree) - target DOM selector id for the treeview
-	* minHeight: (default: 100) - minimum height of the treeview
-	* minWidth: (default: 600) - minimum width of the treeview
+    * summary: (default:summary) - target DOM selector id for the summary of user stories to go to
+    * tree: (default: tree) - target DOM selector id for the treeview
+    * minHeight: (default: 100) - minimum height of the treeview
+    * minWidth: (default: 600) - minimum width of the treeview
 
     
     Example:

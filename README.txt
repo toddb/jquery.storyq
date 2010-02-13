@@ -10,6 +10,8 @@ This is a jQuery plugin/widget for viewing StoryQ test runs. StoryQ is a BDD-sty
 
 The widget is a basic test runner viewer. It lists tests in a tree view, aggregating fail, success and pending. Each item is able to be clicked on which displays the user stories in a pane below. 
 
+!http://github.com/toddb/jquery.storyq/raw/master/screenshot.png(Screenshot)!
+
 == USAGE:
 
 <html>
